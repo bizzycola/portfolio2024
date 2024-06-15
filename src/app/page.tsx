@@ -57,28 +57,28 @@ export default function Home() {
 
           <div className="flex flex-row flex-wrap justify-center lg:justify-between gap-4">
             {/* == lchant.dev == */}
-            <a href="/projects/lchantdev" className="p-5 bg-white shadow-md rounded-md  block hover:shadow-lg" style={{ "width": "280px" }}>
+            <a href="/projects/lchantdev" className="p-5 bg-white shadow-md rounded-md  block hover:shadow-lg" style={{ "width": "300px" }}>
               <h3 className="text-2xl text-gray-800">lchant.dev</h3>
               <p className="text-gray-600">My personal portfolio website</p>
               <img className="mt-2 rounded-md max-w-60 shadow-md" src="/images/projects/lchantdev.png" />
             </a>
 
             {/* == deployr == */}
-            <a href="/projects/deployr" className="p-5 bg-white shadow-md rounded-md  block hover:shadow-lg" style={{ "width": "280px" }}>
+            <a href="/projects/deployr" className="p-5 bg-white shadow-md rounded-md  block hover:shadow-lg" style={{ "width": "300px" }}>
               <h3 className="text-2xl text-gray-800">Deployr</h3>
               <p className="text-gray-600">Fullstack docker deployment tool</p>
               <img className="mt-2 rounded-md max-w-60 shadow-md" src="/images/projects/deployr.jpg" />
             </a>
 
             {/* == QR Generator == */}
-            <a href="/projects/qrcode" className="p-5 bg-white shadow-md rounded-md flex flex-col block hover:shadow-lg" style={{ "width": "280px" }}>
+            <a href="/projects/qrcode" className="p-5 bg-white shadow-md rounded-md flex flex-col block hover:shadow-lg" style={{ "width": "300px" }}>
               <h3 className="text-2xl text-gray-800">QR Code Generator</h3>
               <p className="text-gray-600">Docker static QR code generator</p>
               <img className="mt-2 rounded-md max-w-40 shadow-md self-center margin-auto" src="/images/projects/qr.png" />
             </a>
 
             {/* == Hosts Editor == */}
-            <a href="/projects/hostseditor" className="p-5 bg-white shadow-md rounded-md  block hover:shadow-lg" style={{ "width": "280px" }}>
+            <a href="/projects/hostseditor" className="p-5 bg-white shadow-md rounded-md  block hover:shadow-lg" style={{ "width": "300px" }}>
               <h3 className="text-2xl text-gray-800">Host file editor</h3>
               <p className="text-gray-600">Simple Windows host file editor</p>
               <img className="mt-2 rounded-md max-w-60 shadow-md" src="/images/projects/hostseditor.png" />
