@@ -16,7 +16,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-indigo-600 mb-8 self-start"></div>
             
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-            I&apos;m a 29-year old backend web developer and musician from NSW, Australia with a passion for writing code and building applications. I have experience primarily with C# & ASP.Net Core, NodeJS / TS, PHP & Laravel, and Go. I also have front-end experience with Vue3, React (which this portfolio is built in!) and Typescript.
+            I&apos;m a {new Date().getFullYear() - 1995}-year old backend web developer and musician from NSW, Australia with a passion for writing code and building applications. I have experience primarily with C# & ASP.Net Core, NodeJS / TS, PHP & Laravel, and Go. I also have front-end experience with Vue3, React (which this portfolio is built in!) and Typescript.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
