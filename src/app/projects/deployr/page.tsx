@@ -3,7 +3,7 @@ import PageHeader from "@/components/header";
 
 export default function Page() {
     return (
-        <main className="flex min-h-screen flex-col items-center bg-gray-50 font-sans">
+        <main className="flex min-h-screen flex-col items-center bg-white font-sans">
             <PageHeader />
             <section className="text-left mt-10 lg:p-0 p-5" style={{ "maxWidth": "960px" }}>
                 <div className="mb-10">
@@ -30,14 +30,14 @@ export default function Page() {
                     <h2 className="text-4xl mb-2 text-gray-700">Skills Used</h2>
                     <hr className="border-b border-gray-100 mt-5 mb-5" />
                     <div className="flex flex-row items-center flex-wrap gap-2">
-                        <div className="py-1 px-4 rounded-md bg-gray-200">C#</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">ASP.Net Core</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">TypeScript</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">Vue3</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">REST</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">GraphQL</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">HotChocolate</div>
-                        <div className="py-1 px-4 rounded-md bg-gray-200">YARP</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">C#</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">ASP.Net Core</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">TypeScript</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">Vue3</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">REST</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">GraphQL</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">HotChocolate</div>
+                        <div className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">YARP</div>
                     </div>
                 </div>
             </section>

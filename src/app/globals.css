@@ -15,10 +15,10 @@
 .custom-shape-divider-top-1718454415 svg {
     position: relative;
     display: block;
-    width: calc(140% + 1.3px);
-    height: 75px;
+    width: calc(100% + 1.3px);
+    height: 50px;
 }
 
 .custom-shape-divider-top-1718454415 .shape-fill {
-    fill: rgb(249, 250, 251);
+    fill: #F9FAFB; /* This matches the gray-50 color from the contact section */
 }
