@@ -143,7 +143,8 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">Fullstack docker deployment tool for web applications</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">Docker</span>
-                    <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">Go</span>
+                    <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">C#</span>
+                    <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">ASP.Net Core</span>
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">Vue</span>
                   </div>
                 </div>
