@@ -16,12 +16,9 @@ export default function Home() {
             <div className="w-20 h-1 bg-indigo-600 mb-8 self-start"></div>
             
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-            I'm a 29-year old backend web developer and musician from NSW, Australia with a passion for writing code and building applications. I have experience primarily with C# & ASP.Net Core, NodeJS / TS, PHP & Laravel, and Go. I also have front-end experience with Vue3, React (which this portfolio is built in!) and Typescript.
+            I&apos;m a 29-year old backend web developer and musician from NSW, Australia with a passion for writing code and building applications. I have experience primarily with C# & ASP.Net Core, NodeJS / TS, PHP & Laravel, and Go. I also have front-end experience with Vue3, React (which this portfolio is built in!) and Typescript.
             </p>
-            {/* <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              
-            </p> */}
-            
+
             <div className="flex flex-wrap gap-3 mt-4">
               <span className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">C# / ASP.NET Core</span>
               <span className="px-4 py-2 rounded-full bg-indigo-100 text-indigo-600 font-medium">Node.js</span>
