@@ -1,5 +1,7 @@
 import PageFooter from "@/components/footer";
 import PageHeader from "@/components/header";
+import RecentPosts from "@/components/RecentPosts";
+import blogPosts from "@/data/blogPosts";
 import Image from "next/image";
 
 export default function Home() {
@@ -140,7 +142,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Deployr</h3>
-                  <p className="text-gray-600 mb-4">Fullstack docker deployment tool for web applications</p>
+                  <p className="text-gray-600 mb-4">Fullstack web application to publish projects from GitHub to Docker</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">Docker</span>
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">C#</span>
@@ -164,7 +166,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">QR Code Generator</h3>
-                  <p className="text-gray-600 mb-4">Docker static QR code generator for quick access</p>
+                  <p className="text-gray-600 mb-4">Static QR code generator hosted in docker</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">Docker</span>
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">JavaScript</span>
@@ -185,7 +187,7 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Host file editor</h3>
-                  <p className="text-gray-600 mb-4">Simple Windows host file editor for developer workflows</p>
+                  <p className="text-gray-600 mb-4">Simple Windows host file editor</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">C#</span>
                     <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">WPF</span>
@@ -197,6 +199,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Recent Posts Section */}
+      {blogPosts?.length > 0 && <RecentPosts />}
       
       <PageFooter />
     </main>

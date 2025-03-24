@@ -1,4 +1,5 @@
 import Image from "next/image";
+import blogPosts from "@/data/blogPosts";
 
 export default function PageHeader() {
     return (
@@ -9,6 +10,7 @@ export default function PageHeader() {
                     <a href="/#about" className="hover:text-indigo-200 transition-colors">About</a>
                     <a href="/#skills" className="hover:text-indigo-200 transition-colors">Skills</a>
                     <a href="/#projects" className="hover:text-indigo-200 transition-colors">Projects</a>
+                    {blogPosts?.length > 0 && <a href="/blog" className="hover:text-indigo-200 transition-colors">Blog</a>}
                     <a href="#contact" className="hover:text-indigo-200 transition-colors">Contact</a>
                 </div>
             </nav>
