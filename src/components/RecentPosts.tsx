@@ -14,7 +14,7 @@ export default function RecentPosts() {
           <h2 className="text-4xl font-bold mb-6 text-gray-800">Recent Posts</h2>
           <div className="w-20 h-1 bg-indigo-600 mb-4"></div>
           <p className="text-gray-600 text-center max-w-2xl">
-            I write about web development, programming tips, and technologies I'm passionate about.
+            I write about web development, programming tips, and technologies I&apos;m passionate about.
             Check out my latest articles below.
           </p>
         </div>
