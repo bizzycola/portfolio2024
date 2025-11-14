@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <TrackingScript /> */}
       <body className={inter.className}>
-        <PlausibleProvider domain="lchant.dev" customDomain="metrics.lchant.dev">{children}</PlausibleProvider>
+        <PlausibleProvider domain="lchant.dev" customDomain="https://metrics.lchant.dev">{children}</PlausibleProvider>
       </body>
     </html>
   );
