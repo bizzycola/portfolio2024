@@ -3,12 +3,7 @@ import { Inter } from "next/font/google";
 import TrackingScript from '@/components/tracking';
 import "./globals.css";
 import Head from 'next/head'
-import { init } from '@plausible-analytics/tracker'
-
-init({
-  domain: 'lchant.dev',
-  endpoint: 'https://metrics.lchant.dev/api/event'
-})
+import PlausibleProvider from 'next-plausible'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <TrackingScript /> */}
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <PlausibleProvider domain="lchant.dev" customDomain="metrics.lchant.dev">{children}</PlausibleProvider>
+      </body>
     </html>
   );
 }

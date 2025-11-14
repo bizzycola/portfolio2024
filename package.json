@@ -11,6 +11,7 @@
   "dependencies": {
     "@plausible-analytics/tracker": "^0.4.4",
     "next": "14.2.4",
+    "next-plausible": "^3.12.5",
     "react": "^18",
     "react-dom": "^18"
   },
