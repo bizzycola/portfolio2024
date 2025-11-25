@@ -1,3 +1,4 @@
+"use client"
 import PageFooter from "@/components/footer";
 import PageHeader from "@/components/header";
 import RecentPosts from "@/components/RecentPosts";
@@ -201,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* Recent Posts Section */}
-      {blogPosts?.length > 0 && <RecentPosts />}
+      <RecentPosts />
       
       <PageFooter />
     </main>

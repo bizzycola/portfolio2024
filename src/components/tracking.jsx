@@ -4,7 +4,7 @@ import Script from 'next/script';
 const TrackingScript = () => {
   return (
     <>
-      <Script defer src="https://metrics.lchant.dev/script.js" data-website-id="8d9d97f8-448d-4eee-9b6b-eb56d270bd2e"></Script>
+      <Script defer src="https://metrics.lchost.dev/api/script.js" data-site-id="d3f12929943b"></Script>
     </>
   );
 };
