@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import blogPosts from "@/data/blogPosts";
 import { useEffect, useState } from 'react';
 
 export default function RecentPosts() {
@@ -10,7 +8,6 @@ export default function RecentPosts() {
     const res = await fetch(`https://dev.to/api/articles?username=bizzycola&page=1&per_page=3`)
     const articles = await res.json();
 
-    // get the first 3 articles
     const recentArticles = articles.slice(0, 3).map((article: any) => {
         return {
           title: article.title,
@@ -46,19 +43,23 @@ export default function RecentPosts() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((post) => (
-            <Link href={`${post.url}`} key={post.slug} className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
-                <div className="relative h-48 overflow-hidden bg-gradient-to-r from-indigo-500 to-purple-500">
-                  <span className='text-white text-2xl font-bold absolute bottom-0 left-0 p-4 bg-gradient-to-t from-indigo-900 to-transparent w-full'>
-                    {post.titleShort}
-                  </span>
-                  <div className="absolute top-0 right-0 mt-4 mr-4">
-                    <span className="px-3 py-1 bg-indigo-600 text-white text-xs font-medium rounded-full">
-                      {post.category}
+          {posts.map((post) => {
+            const randomX = Math.floor(Math.random() * 100);
+            const randomY = Math.floor(Math.random() * 100);
+            
+            return (
+              <Link href={`${post.url}`} key={post.slug} className="group">
+                <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+                  <div className="relative h-48 overflow-hidden bg-cover" style={{ backgroundImage: 'url(/postbg.svg)', backgroundPosition: `${randomX}% ${randomY}%` }}>
+                    <span className='text-white text-2xl font-bold absolute bottom-0 left-0 p-4 bg-gradient-to-t from-indigo-900 to-transparent w-full'>
+                      {post.titleShort}
                     </span>
+                    <div className="absolute top-0 right-0 mt-4 mr-4">
+                      <span className="px-3 py-1 bg-indigo-600 text-white text-xs font-medium rounded-full">
+                        {post.category}
+                      </span>
+                    </div>
                   </div>
-                </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-bold mb-2 group-hover:text-indigo-600 transition-colors">{post.title}</h3>
                   <p className="text-gray-600 mb-4 flex-1">{post.excerpt}</p>
@@ -68,7 +69,8 @@ export default function RecentPosts() {
                 </div>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-12 text-center">
